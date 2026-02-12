@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keindahan Mawar</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ff9ecf, #ff4d6d, #c9184a);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ===== COVER ===== */
+.cover {
+  height: 100vh;
+  background: url("Pink 3d roses.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,105,180,0.6), rgba(200,0,60,0.7));
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.cover h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cover p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #ffffff;
+  color: #c9184a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffe5ec;
+  transform: scale(1.08);
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 70px 25px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.15);
+  padding: 22px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 25px;
+  animation: slideUp 1.5s ease;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card p {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="cover-content">
+    <h1>KEINDAHAN MAWAR</h1>
+    <p>Bunga favorit gadis dengan senyuman manis</p>
+    <a href="#materi" class="btn">Jelajahi</a>
+  </div>
+</div>
+
+<!-- ===== MATERI ===== -->
+<section id="materi">
+  <div class="container">
+    <h2>Pesona Mawar yang Anggun</h2>
+
+    <div class="card">
+      <h3>🌹 Mawar dan Keindahannya</h3>
+      <p>
+        Mawar adalah bunga yang dikenal karena keindahan dan kelembutannya.
+        Kelopak yang tersusun rapi menciptakan bentuk yang anggun dan memikat.
+        Warna merah dan merah muda melambangkan cinta, kelembutan, serta ketulusan hati.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🤍 Bunga Favorit Gadis</h3>
+      <p>
+        Bagi banyak gadis, mawar adalah bunga favorit yang penuh makna.
+        Seperti senyuman manis yang tulus, mawar mampu menghadirkan
+        rasa bahagia dan kehangatan tanpa perlu banyak kata.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>✨ Senyuman Seindah Mawar</h3>
+      <p>
+        Ketika seorang gadis tersenyum sambil memegang mawar,
+        terlihat perpaduan keindahan alam dan keindahan perasaan.
+        Mawar menjadi simbol kelembutan yang memperindah setiap momen.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🌺 Filosofi Mawar</h3>
+      <p>
+        Mawar memiliki duri di balik kelopaknya yang indah.
+        Hal ini mengajarkan bahwa kelembutan dan kekuatan dapat berjalan bersama.
+        Seperti kehidupan, ada tantangan, namun tetap indah jika dijalani dengan senyuman.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  Sania Dewi 11-12
+</footer>
+
+</body>
+</html>
